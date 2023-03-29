@@ -7,5 +7,10 @@ node('built-in')
     stage('learning Continuous Build') 
 	{
     sh label: '', script: 'mvn package'
+        }
+	stage('learning Continuous test')
+	{
+          sh 'echo "testing complete"' 
 	}
    }
+

@@ -10,7 +10,7 @@ node('built-in')
 	}
     stage('training Continuous deploy') 
     {
-    sh 'scp /home/ec2-user/.jenkins/workspace/devlopment/webapp/target/webapp.war ec2-user@172.31.39.114:/var/lib/tomcat/webapps/testenv.war'
+    sh 'scp /home/ec2-user/.jenkins/workspace/devlopment/webapp/target/webapp.war ec2-user@172.31.31.224:/var/lib/tomcait/webapps/testenv.war'
     }
 
 
